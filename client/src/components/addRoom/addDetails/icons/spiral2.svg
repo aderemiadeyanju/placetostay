@@ -1,0 +1,47 @@
+<svg width="100%" height="100%" viewBox="0 0 840 840"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <desc><![CDATA[
+    Archimedean Spiral 2
+    Made from http://steamcoded.org/images/spiralmaker.svg?repeat=36&segments=16
+    
+    Radius of the Archimedean spiral changes as a linear function of the rotation angle.
+    
+    Thanks to Vincent Tan, PolymathProgrammer.com, for his post on Reverse Engineering Bezier Curves
+    which helped me with the math required to create the Bezier curves in the spiral.
+    
+    Jay Nick
+    STEAMcoded.org
+  ]]>
+  </desc>
+
+  <defs>
+    <radialGradient id="rg1" cx="0.429" cy="0.417" r="50%">
+      <stop offset="5%" style="stop-color:violet;"/>
+      <stop offset="15%" style="stop-color:indigo;"/>
+      <stop offset="30%" style="stop-color:blue;"/>
+      <stop offset="40%" style="stop-color:lime;"/>
+      <stop offset="75%" style="stop-color:yellow;"/>
+      <stop offset="90%" style="stop-color:orange;"/>
+      <stop offset="100%" style="stop-color:red;"/>
+    </radialGradient>
+  </defs>
+  
+  <g id="spirals" transform="translate(420,420) rotate(0)" style="fill:none;stroke-width:3px;stroke-linecap:round;">
+    <path id="spiral1" style="stroke:url(#rg1);" d="M0,0C8.42,0.1,16.47,-7,17.68,-17.68C19.09,-28.17,13.25,-41.67,0,-50C-12.99,-58.44,-33.15,-61.18,-53.03,-53.03C-72.82,-45.23,-91.73,-26.37,-100,0C-108.49,26.1,-105.84,59.26,-88.39,88.39C-71.34,117.48,-39.48,141.78,0,150C39.19,158.55,85.41,150.5,123.74,123.74C162.15,97.49,191.85,52.57,200,0C208.61,-52.3,195.15,-111.53,159.1,-159.1C123.6,-206.82,65.68,-241.88,0,-250C-65.4,-258.65,-137.67,-239.83,-194.45,-194.45C-251.46,-149.75,-291.96,-78.78,-300,0C-308.73,78.51,-284.47,163.78,-229.81,229.81C-175.86,296.19,-91.89,341.96,0,350C91.62,358.78,189.9,329.13,265.17,265.17C340.83,201.97,392.04,105,400,0"/>
+    
+    <g id="spirals1">
+      <use xlink:href="#spiral1" transform="rotate(36)"/>
+      <use xlink:href="#spiral1" transform="rotate(72)"/>
+      <use xlink:href="#spiral1" transform="rotate(108)"/>
+      <use xlink:href="#spiral1" transform="rotate(144)"/>
+      <use xlink:href="#spiral1" transform="rotate(180)"/>
+      <use xlink:href="#spiral1" transform="rotate(216)"/>
+      <use xlink:href="#spiral1" transform="rotate(252)"/>
+      <use xlink:href="#spiral1" transform="rotate(288)"/>
+      <use xlink:href="#spiral1" transform="rotate(324)"/>
+    </g>
+  </g>
+  
+</svg>

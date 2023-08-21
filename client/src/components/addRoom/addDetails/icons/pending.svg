@@ -1,0 +1,28 @@
+<body>
+  <div id="btn" type="button" onclick="stop()">Rotate</div>
+  <svg width="100%" height="100%" viewBox="0 0 650 650" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <radialGradient id="rg" cx="0.477" cy="0.535" r="50%">
+        <stop offset="50%" style="stop-color:#F15FD4;"> 
+          <animate attributeName="stop-color" values="#F15FD4; #517FE9; #F15FD4" dur="8s" repeatCount="indefinite"></animate>
+        </stop>
+        <stop offset="100%" style="stop-color:#517FE9;">
+          <animate attributeName="stop-color" values="#517FE9; #F15FD4;  #517FE9;" dur="4s" repeatCount="indefinite"></animate>
+        </stop>
+      </radialGradient>
+    </defs>
+    <symbol id="spiralDesign" viewBox="0 0 620 620">
+      <g transform="translate(310,310)" style="fill:none;stroke-width:2px;stroke-linecap:round;">
+        <path class="path-0"
+          d="M0,0c6.85,-0.62,10.64,12.17,0,18.75c-9.41,7.13,-31.18,1.9,-37.5,-18.75c-7.42,-19.46,6.84,-50.19,37.5,-56.25c29.43,-7.68,69.26,15.54,75,56.25c7.97,39.45,-24.3,88.28,-75,93.75c-49.46,8.24,-107.32,-33.03,-112.5,-93.75c-8.53,-59.49,41.77,-126.31,112.5,-131.25c69.5,-8.8,145.36,50.5,150,131.25c9.1,79.54,-59.25,164.37,-150,168.75c-89.56,9.33,-183.39,-67.93,-187.5,-168.75c-9.6,-99.54,76.67,-202.45,187.5,-206.25c109.6,-9.9,221.43,85.41,225,206.25c10.17,119.58,-94.14,240.49,-225,243.75c-129.63,10.47,-259.5,-102.89,-262.5,-243.75c-10.71,-139.6,111.6,-278.57,262.5,-281.25c149.67,-11.01,297.54,120.35,300,281.25"
+          style="stroke-width: 30px;">
+        
+        </path>
+      </g>
+    </symbol>
+
+
+    <use width="650" height="600" xlink:href="#spiralDesign" style="stroke:url(#rg);" />
+  </svg>
+</body>
