@@ -21,7 +21,7 @@ const BottomNav = () => {
   <Box ref={ref}>
     {{
        0: <Protected><ClusterMap /></Protected>,
-       1: < Rooms/>,
+       1: <Protected>< Rooms/></Protected>,
        2: <Protected>< AddRoom setPage={setValue}/></Protected>
 
 

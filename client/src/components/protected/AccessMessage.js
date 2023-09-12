@@ -16,7 +16,7 @@ const AccessMessage = () => {
         variant='outlined'
         >
 
-              <AlertTitle>  Forbidden Access</AlertTitle>
+              <AlertTitle>  Restricted Access</AlertTitle>
            Please Login or Register to access this Page
            <Button
            variant='outlined'

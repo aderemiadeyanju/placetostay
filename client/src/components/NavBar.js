@@ -32,7 +32,7 @@ const NavBar = () => {
 
         
         >
-              You are Welcome
+              You are Welcome to Home-Locations.com
         </Typography>
 
 

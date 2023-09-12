@@ -27,7 +27,7 @@ const Sidebar = ({isOpen,setIsOpen}) => {
     >
        <DrawerHeader>
             <Typography>
-              Apply Search or Filter
+              Apply Search Houses or Filter
             </Typography>
             <IconButton onClick={()=>setIsOpen(false)}>
               <ChevronLeft fontSize='large'/>
